@@ -17,28 +17,39 @@
     <div class="options-cont">
       <i class="fa-solid fa-bars"></i>
     </div>
-    <div class="tools-cont">
-      <img src="Icons/Pencil.svg" alt="" srcset="" />
-      <img src="Icons/Eraser.svg" alt="" srcset="" />
-      <img src="Icons/Download.svg" alt="" srcset="" />
-      <img src="Icons/Upload.svg" alt="" srcset="" />
-      <img src="Icons/StickyNote.svg" alt="" srcset="" />
-      <img src="Icons/Redo.svg" alt="" srcset="" />
-      <img src="Icons/Undo.svg" alt="" srcset="" />
+    <div class="tools-cont scale-tools">
+      <img class="pencil" src="Icons/Pencil.svg" alt="" srcset="" />
+      <img class="eraser" src="Icons/Eraser.svg" alt="" srcset="" />
+      <img class="download" src="Icons/Download.svg" alt="" srcset="" />
+      <img class="upload" src="Icons/Upload.svg" alt="" srcset="" />
+      <img class="sticky" src="Icons/StickyNote.svg" alt="" srcset="" />
+      <img class="redo" src="Icons/Redo.svg" alt="" srcset="" />
+      <img class="undo" src="Icons/Undo.svg" alt="" srcset="" />
     </div>
     <div class="pencil-tool-cont">
       <div class="pencil-width-cont">
         <input type="range" min="2" max="10" value="3" id="" />
       </div>
       <div class="pencil-color-cont">
-        <div class="black pencil color"></div>
-        <div class="red pencil color"></div>
-        <div class="blue pencil color"></div>
+        <div class="black pencil-color"></div>
+        <div class="red pencil-color"></div>
+        <div class="blue pencil-color"></div>
       </div>
     </div>
     <div class="eraser-tool-cont">
       <input type="range" min="2" max="10" value="3" id="" />
     </div>
+    <div class="sticky-cont">
+      <!-- <div class="header-cont">
+        <div class="minimize"></div>
+        <div class="remove"></div>
+      </div>
+      <div class="note-cont">
+        <textarea></textarea>
+      </div> -->
+    </div>
+    <canvas></canvas>
     <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
   </body>
 </html>
