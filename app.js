@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const express = require('express'); // access
 const socket = require('socket.io');
 
@@ -5,7 +7,7 @@ const app = express(); // initialized and server ready
 
 app.use(express.static('public')); // direct express to index.html
 
-const port = 3000;
+const port = process.env.PORT || 4000;
 
 // start listening to incoming request
 const server = app.listen(port, () => {

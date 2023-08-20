@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
@@ -39,15 +40,7 @@
     <div class="eraser-tool-cont">
       <input type="range" min="2" max="10" value="3" class="eraser-width" />
     </div>
-    <div class="sticky-cont">
-      <!-- <div class="header-cont">
-        <div class="minimize"></div>
-        <div class="remove"></div>
-      </div>
-      <div class="note-cont">
-        <textarea></textarea>
-      </div> -->
-    </div>
+    <div class="sticky-cont"></div>
     <canvas></canvas>
     <script
       src="https://cdn.socket.io/4.6.0/socket.io.min.js"
@@ -55,7 +48,7 @@
       crossorigin="anonymous"
     ></script>
     <script>
-      let socket = io.connect('https://share-board-aditya.onrender.com/:3000');
+      let socket = io.connect('https://share-board-aditya.onrender.com/');
     </script>
     <script src="./tools.js"></script>
     <script src="./canvas.js"></script>
